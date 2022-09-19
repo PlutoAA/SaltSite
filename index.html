@@ -6,261 +6,306 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salt</title>
 
-    <link rel="stylesheet" href="assets/css/burger.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="//vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/burger.css">
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 </head>
 <body>
-    <script src="/assets/js/scroll.js" defer></script>
-    <script src="//vjs.zencdn.net/7.10.2/video.min.js" defer></script>
-    <div class="wrapper">
+    <section class="header">
 
-        <div class="slider">
-            <ul>
-                <li><img src="/assets/img/Polygon (full).png" alt="" id="scroll1"></li>
-                <li><img src="/assets/img/Polygon (Stroke).png" alt="" id="scroll2"></li>
-                <li><img src="/assets/img/Polygon (Stroke).png" alt="" id="scroll3"></li>
+        <div class="nav">
+            <a href=""><img class="nav__logo" src="./assets/img/nav/Logo.png" srcset="./assets/img/nav/Logo2x.png 2x" alt="Salt logo."></a>
+            <nav class="nav__menu">
+                <a class="nav__link nav__link_active" href="">HOME</a>
+                <a class="nav__link" href="">PRODUCTS</a>
+                <a class="nav__link" href="">SERVICES</a>
+                <a class="nav__link" href="">RESOURCES</a>
+                <a class="nav__link" href="">ABOUT</a>
+                <a class="nav__link" href="">CONTACT US</a>
+            </nav>
+            <div class="burger-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="burger-menu">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-info container">
+            <div class="about">
+                <div class="slider">
+                     <div class="slider__line">
+
+                        <div class="slide">
+                            <h2 class="about__title">Device Authentication</h2>
+                            <p class="about__subtitle">SALT Group is a world leader in authentication and security. We have<br>
+                                a range of services to improve user authentication.<br>
+                                Discover the possibilities with SALT.</p>
+                        </div>
+
+                        <div class="slide">
+                            <h2 class="about__title">User Authentication</h2>
+                            <p class="about__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                                Discover the possibilities with SALT.</p>
+                        </div>
+
+                        <div class="slide">
+                            <h2 class="about__title">Transaction Authentication</h2>
+                            <p class="about__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                                Discover the possibilities with SALT.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slider-rounds">
+                    <div class="slider-rounds__btn" id="slideBtn1">
+                        <svg width="19" height="22" viewBox="0 0 19 22" xmlns="http://www.w3.org/2000/svg">
+                        <path class="slider-rounds__path" fill-rule="evenodd" clip-rule="evenodd" d="M9.5 1.90526L1.64545 6.45263V15.5474L9.5 20.0947L17.3546 15.5474V6.45263L9.5 1.90526ZM19 5.5L9.5 0L0 5.5V16.5L9.5 22L19 16.5V5.5Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="slider-rounds__btn" id="slideBtn2">
+                        <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="slider-rounds__path" fill-rule="evenodd" clip-rule="evenodd" d="M9.5 1.90526L1.64545 6.45263V15.5474L9.5 20.0947L17.3546 15.5474V6.45263L9.5 1.90526ZM19 5.5L9.5 0L0 5.5V16.5L9.5 22L19 16.5V5.5Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="slider-rounds__btn" id="slideBtn3">
+                        <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="slider-rounds__path" fill-rule="evenodd" clip-rule="evenodd" d="M9.5 1.90526L1.64545 6.45263V15.5474L9.5 20.0947L17.3546 15.5474V6.45263L9.5 1.90526ZM19 5.5L9.5 0L0 5.5V16.5L9.5 22L19 16.5V5.5Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <button class="about__btn btn">GET STARTED</button>
+            </div>
+            <svg class="about__twitter-img" width="151" height="123" viewBox="0 0 151 123" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M135.139 31.1763C135.23 32.4953 135.23 33.8143 135.23 35.1455C135.23 75.7069 104.3 122.486 47.7416 122.486V122.462C31.0342 122.486 14.6738 117.709 0.608887 108.701C3.03828 108.992 5.47985 109.138 7.92752 109.144C21.7732 109.156 35.2232 104.519 46.1159 95.9784C32.9582 95.7292 21.4201 87.1647 17.3894 74.6614C21.9985 75.5488 26.7477 75.3665 31.2716 74.1326C16.9266 71.2392 6.60627 58.6569 6.60627 44.0443C6.60627 43.9106 6.60627 43.783 6.60627 43.6553C10.8805 46.032 15.6663 47.351 20.5616 47.4969C7.05074 38.4826 2.88606 20.539 11.0449 6.51002C26.6564 25.6875 49.69 37.3459 74.4162 38.5798C71.9381 27.9183 75.3234 16.7461 83.3118 9.25139C95.6963 -2.37057 115.174 -1.77489 126.816 10.5826C133.702 9.22708 140.302 6.70453 146.342 3.13041C144.047 10.2361 139.243 16.272 132.825 20.1075C138.92 19.3902 144.875 17.7612 150.482 15.2751C146.354 21.4508 141.155 26.8302 135.139 31.1763Z" fill="white"/>
+            </svg>
+        </div>
+
+        <div class="find-more">
+            <span class="find-more__text">FIND OUT MORE</span>
+            <a href="#products" id="more"><svg class="find-more__img" width="62" height="71" viewBox="0 0 62 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M62 17.75L31 0L0 17.75V53.25L31 71L62 53.25V17.75ZM31 3.28249L59.1336 19.3912V51.6087L31 67.7175L2.8664 51.6087V19.3912L31 3.28249ZM19.2596 31.0114C18.4375 30.3157 17.207 30.4183 16.5114 31.2404C15.8157 32.0625 15.9183 33.293 16.7404 33.9886L29.7404 44.9886C30.4675 45.6038 31.5325 45.6038 32.2596 44.9886L45.2596 33.9886C46.0817 33.293 46.1843 32.0625 45.4886 31.2404C44.793 30.4183 43.5625 30.3157 42.7404 31.0114L31 40.9456L19.2596 31.0114Z" fill="#FF8B00"/>
+                </svg>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="stats container">
+
+        <div class="achieve">
+            <h1 class="achieve__title">126,300</h1>
+            <p class="achieve__text">Identity Theft Cases Reported<br>
+            in Australia</p>
+        </div>
+
+        <div class="achieve">
+            <h1 class="achieve__title">$20.1bn</h1>
+            <p class="achieve__text">Online Transactions per<br>
+            annum by Australians</p>
+        </div>
+
+        <div class="achieve">
+            <h1 class="achieve__title">45,511</h1>
+            <p class="achieve__text">Online Fraud Cases Reported<br>
+            in Australia</p>
+        </div>
+
+    </section>
+
+    <section class="products" id="products">
+        <div class="container">
+
+            <div class="pruducts__title">
+                <h1 class="pruducts__articul">
+                    What We Do
+                    <svg class="pruducts__img" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M34 0H0V12H34L34 46H46L46 12V0H34Z" fill="#FF8B00"/>
+                    </svg>
+                </h1>
+            </div>
+
+            <div class="products__grid">
+
+                <div class="product-item">
+                    <img class="product-item__img product-item__img_big-padding" src="./assets/img/products/item-1.png" srcset="./assets/img/products/item-1_2x.png 2x" alt="Device Authentication">
+                    <h5 class="product-item__title">Device Authentication</h5>
+                    <p class="product-item__text">Hardware-based device fingerprinting resilient to cloning, malware and device jailbreak/root. Hardware-level control over the displayed UI independent of the device operating system. Hardware-level data protection.
+                    </p>
+                </div>
+
+                <div class="product-item">
+                    <img class="product-item__img product-item__img_big-padding" src="./assets/img/products/item-2.png" srcset="./assets/img/products/item-2_2x.png 2x" alt="User Authentication">
+                    <h5 class="product-item__title">User Authentication</h5>
+                    <p class="product-item__text">Verify the identity of users for access control with contemporary biometric connected MFA security tokens.
+                    </p>
+                </div>
+
+                <div class="product-item">
+                    <img class="product-item__img product-item__img_big-padding" src="./assets/img/products/item-3.png" srcset="./assets/img/products/item-3_2x.png 2x" alt="Transaction Authentication">
+                    <h5 class="product-item__title">Transaction Authentication</h5>
+                    <p class="product-item__text">High assurance out-of-band authentication of high impact transactions and instructions initiated through electronic service delivery channels. Audit trail of verification for non-repudiation. Fraud protection against man-in-the-middle and browser malware.
+                    </p>
+                </div>
+
+                <div class="product-item">
+                    <img class="product-item__img product-item__img_big-padding" src="./assets/img/products/item-4.png" srcset="./assets/img/products/item-4_2x.png 2x" alt="Contemporary authentication methods">
+                    <h5 class="product-item__title">Contemporary authentication methods</h5>
+                    <p class="product-item__text">Echidna authentication server to enable adaptive risk-based approach to security through a range of methods for different levels of authentication assurance from SMS OTPs, Challenge/Response, to more contemporary QR code signing and advanced connected mobile security tokens capable of transaction signatures with dynamic linking of the transaction context and addition of PIN, Fingerprint and other biometrics.
+                    </p>
+                </div>
+
+                <div class="product-item">
+                    <img class="product-item__img product-item__img_small-padding" src="./assets/img/products/item-5.png" srcset="./assets/img/products/item-5_2x.png 2x" alt="HSM Solutions">
+                    <h5 class="product-item__title">HSM Solutions</h5>
+                    <p class="product-item__text">Reseller of Thales nShield HSMs with professional services and subject matter expertise in HSMs, key ceremony procedures, and SEE code development. 
+                    </p>
+                </div>
+
+                <div class="product-item">
+                    <img class="product-item__img product-item__img_small-padding" src="./assets/img/products/item-6.png" srcset="./assets/img/products/item-6_2x.png 2x" alt="Cloud & IoT Security">
+                    <h5 class="product-item__title">Cloud & IoT Security</h5>
+                    <p class="product-item__text">Secure the identity and access of users, devices and Internet of Things connecting into the cloud. Support cloud adoption and migration of applications and data into private and public clouds.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="spotlight" id="spotlight">
+
+        <div class="about">
+            <h3 class="about__title about__title-spotlight">Product Spotlight</h3>
+            <p class="about__subtitle about__subtitle-spotlight">Salt mSign Connected Token is a contemporary mobile security 2FA token for authentication of user identity and verification of transactions independent of the delivery channel that initiated the request.</p>
+            <button class="about__btn about__btn-spotlight btn">MORE INFO</button>
+        </div>
+
+        <div class="spotlight__video">
+            <video
+                id="my-video"
+                class="video-js vjs-big-play-centered"
+                controls
+                preload="auto"
+                poster="./assets/img/Image.png"
+                data-setup="{}"
+            >
+                <source src="./assets/videos/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a
+                >
+                </p>
+            </video>
+        </div>
+
+        <button class="spotlight__btn btn spotlight__btn_mobile">MORE INFO</button>
+
+    </section>
+
+    <section class="getstart">
+
+        <h2 class="getstart__title">Ready<br> to get started?</h2>
+
+        <div class="contact-form">
+            <h4 class="contact-form__title">Contact us</h4>
+            <form action="" class="contact-form__fields" id="main-form">
+
+                <div class="text-field text-field_first">
+                    <label class="text-field__label" for="First_Name">First Name</label>
+                    <input class="text-field__input text-field__input_first" type="text" name="First_Name" id="First_Name" placeholder="First Name" required maxlength="102" pattern="[a-z]">
+                </div>
+
+                <div class="text-field text-field_second">
+                    <label class="text-field__label" for="Second_Name">Second Name</label>
+                    <input class="text-field__input text-field__input_second" type="text" name="Second_Name" id="Second_Name" placeholder="Second Name" required maxlength="102" pattern="[a-z]">
+                </div>
+                
+                <div class="text-field">
+                    <label class="text-field__label" for="Email">Email</label>
+                    <input class="text-field__input" type="email" name="Email" id="Email" placeholder="Email" required>
+                </div>
+
+                <div class="text-field">
+                    <label class="text-field__label" for="Textarea">Textarea</label>
+                    <textarea class="text-field__input text-field__input_bigtext" type="text" name="Textarea" id="Textarea" placeholder="Textarea" maxlength="256"></textarea>
+                </div>
+
+            </form>
+            <div class="contact-form__btn-wrap">
+                <button class="contact-form__btn btn" type="submit" form="main-form">SEND</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="border"></section>
+
+    <section class="footer">
+
+        <div class="footer__twitter">
+            <a class="twitter-timeline" data-lang="en" data-width="295" data-height="299" data-dnt="true" data-theme="light" href="https://twitter.com/saltgroup?ref_src=twsrc%5Etfw">Tweets by saltgroup</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <div class="footer__nav">
+            <h6 class="footer__title">Navigation</h6>
+            <ul type="none">
+                <li class="footer__list"><a class="footer__link" href="">HOME</a></li>
+                <li class="footer__list"><a class="footer__link" href="">PRODUCTS</a></li>
+                <li class="footer__list"><a class="footer__link" href="">SERVICES</a></li>
+                <li class="footer__list"><a class="footer__link" href="">RESOURCES</a></li>
+                <li class="footer__list"><a class="footer__link" href="">ABOUT</a></li>
+                <li class="footer__list"><a class="footer__link" href="">CONTACT US</a></li>
             </ul>
         </div>
 
-        <section class="header">
-            <div class="container">
+        <div class="footer__nav">
+            <h6 class="footer__title">links</h6>
+            <ul type="none">
+                <li class="footer__list"><a class="footer__link" href="">Disclaimer</a></li>
+                <li class="footer__list"><a class="footer__link" href="">Legal</a></li>
+                <li class="footer__list"><a class="footer__link" href="">Environment Policy</a></li>
+                <li class="footer__list"><a class="footer__link" href="">Privacy</a></li>
+            </ul>
+        </div>
 
-                <div class="nav flex" id="header">
-                    <img src="/assets/img/Logo.png" alt="Salt">
+        <div class="footer__nav">
+            <h6 class="footer__title">contact sales</h6>
+            <ul type="none">
+                <li class="footer__list"><a class="footer__link" href="">PHONE: +61 3 9614 4416</a></li>
+                <li class="footer__list"><a class="footer__link" href="">EMAIL: sales@saltgroup.com.au</a></li>
+            </ul>
+        </div>
 
-                    <label class="burger_label">
-                        <input type="checkbox">
-                        <span class="menu"> <span class="hamburger"></span> </span>
-                        <ul>
-                            <li><a class="nav_btn" href="">HOME</a></li>
-                            <li></li><a class="nav_btn" href="">PRODUCTS</a></li>
-                            <li></li><a class="nav_btn" href="">SERVICES</a></li>
-                            <li></li><a class="nav_btn" href="">RESOURCES</a></li>
-                            <li></li><a class="nav_btn" href="">ABOUT</a></li>
-                            <li></li><a class="nav_btn" href="">CONTACT US</a></li>
-                    </label>
+        <div class="footer__logo"><img src="./assets/img/footer/foter_logo.png" srcset="./assets/img/footer/foter_logo2x.png 2x" alt="Salt logo"></div>
 
-                    <nav>
-                        <a class="nav_btn" href="">HOME</a>
-                        <a class="nav_btn" href="">PRODUCTS</a>
-                        <a class="nav_btn" href="">SERVICES</a>
-                        <a class="nav_btn" href="">RESOURCES</a>
-                        <a class="nav_btn" href="">ABOUT</a>
-                        <a class="nav_btn" href="">CONTACT US</a>
-                    </nav>
-                </div>
+    </section>
 
-                <div class="info_short flex">
-                    <div class="info_text">
-                        <h2>Device Authentication</h2>
-                        <p>SALT Group is a world leader in authentication and security. We have<br>
-                            a range of services to improve user authentication.<br>
-                            Discover the possibilities with SALT.</p>
-                        <button class="btn">GET STARTED</button>
-                    </div>
-                    <img class="twitter" src="/assets/img/white_background.png" alt="">
-                </div>
-                
-                <div class="more flex">
-                    <span>FIND OUT MORE</span>
-                    <a href="#products" id="more"><img class="union" src="/assets/img/Union.png" alt="Find out more" id="more"></a>
-                </div>
+    <section class="end">
 
-            </div>
-        </section>
+        <span>© 2017 SALT GROUP</span>
+        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.5 0L9 2.5V7.5L4.5 10L0 7.5V2.5L4.5 0Z" fill="#FF8B00"/>
+        </svg>   
+        <span>ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.</span>
 
-        <section class="stats">
-            <div class="container">
-
-                <div>
-                    <h1>126,300</h1>
-                    <p>Identity Theft Cases Reported<br>
-                        in Australia</p>
-                </div>
-                <div>
-                    <h1>$20.1bn</h1>
-                    <p>Online Transactions per<br>
-                        annum by Australians</p>
-                </div>
-                <div>
-                    <h1>45,511</h1>
-                    <p>Online Fraud Cases Reported<br>
-                        in Australia</p>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="products" id="products">
-            <div class="container">
-
-                <div class="pruducts_title"><h1 class="articul">What We Do<img src="/assets/img/Shape.png" alt=""></div></h1>
-                <div class="products_grid">
-
-                    <div class="product" id="first_column">
-                        <img src="/assets/img/Illustration-5.png" alt="">
-                        <h5>Device Authentication</h5>
-                        <p>Hardware-based device fingerprinting resilient to cloning, malware and device jailbreak/root. Hardware-level control over the displayed UI independent of the device operating system. Hardware-level data protection.
-                        </p>
-                    </div>
-
-                    <div class="product" id="second_column">
-                        <img src="/assets/img/Illustration-4.png" alt="">
-                        <h5>User Authentication</h5>
-                        <p>Verify the identity of users for access control with contemporary biometric connected MFA security tokens.
-                        </p>
-                    </div>
-
-                    <div class="product" id="third_column">
-                        <img src="/assets/img/Illustration-3.png" alt="">
-                        <h5>Transaction Authentication</h5>
-                        <p>High assurance out-of-band authentication of high impact transactions and instructions initiated through electronic service delivery channels. Audit trail of verification for non-repudiation. Fraud protection against man-in-the-middle and browser malware.
-                        </p>
-                    </div>
-
-                    <div class="product" id="first_column">
-                        <img src="/assets/img/Illustration-2.png" alt="">
-                        <h5>Contemporary
-                            authentication methods</h5>
-                        <p>Echidna authentication server to enable adaptive risk-based approach to security through a range of methods for different levels of authentication assurance from SMS OTPs, Challenge/Response, to more contemporary QR code signing and advanced connected mobile security tokens capable of transaction signatures with dynamic linking of the transaction context and addition of PIN, Fingerprint and other biometrics.</p>
-                    </div>
-
-                    <div class="product" id="second_column">
-                        <img src="/assets/img/Illustration-1.png" alt="">
-                        <h5>HSM Solutions</h5>
-                        <p>Reseller of Thales nShield HSMs with professional services and subject matter expertise in HSMs, key ceremony procedures, and SEE code development. 
-                        </p>
-                    </div>
-
-                    <div class="product" id="third_column">
-                        <img src="/assets/img/Illustration.png" alt="">
-                        <h5>Cloud & IoT Security</h5>
-                        <p>Secure the identity and access of users, devices and Internet of Things connecting into the cloud. Support cloud adoption and migration of applications and data into private and public clouds.</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section class="spotlight flex" id="spotlight">
-
-            <div class="spotlight_half">
-                <h3>Product Spotlight</h3>
-                <p>Salt mSign Connected Token is a contemporary mobile security 2FA token for authentication of user identity and verification of transactions independent of the delivery channel that initiated the request.</p>
-                <button class="btn">MORE INFO</button>
-            </div>
-
-            <div class="video">
-                <video
-                    id="my-player"
-                    class="video-js"
-                    controls
-                    preload="auto"
-                    poster="/assets/img/Image.png"
-                    data-setup='{}'>
-                <source src="/assets/videos/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" type="video/mp4"></source>
-                <p class="vjs-no-js">
-                    To view this video please enable JavaScript, and consider upgrading to a
-                    web browser that
-                    <a href="https://videojs.com/html5-video-support/" target="_blank">
-                        supports HTML5 video
-                    </a>
-                </p>
-                </video>
-                
-            </div>
-
-        </section>
-
-        <section class="getstart">
-
-            <div>
-                <h2>Ready<br> to get started?</h2>
-            </div>
-
-            <div class="start_form">
-                <h4>Contact us</h4>
-                <form action="">
-
-                    <div class="double-field flex">
-                        <div class="text-field">
-                            <label class="text-field__label" for="login">First Name</label>
-                            <input class="text-field__input" type="text" name="First_Name" id="First_Name" placeholder="First Name">
-                        </div>
-
-                        <div class="text-field" id="double-field_SecondName">
-                            <label class="text-field__label" for="login">Second Name</label>
-                            <input class="text-field__input" type="text" name="Second_Name" id="Second_Name" placeholder="Second Name">
-                        </div>
-                    </div>
-
-                    <div class="text-field">
-                        <label class="text-field__label" for="login">Email</label>
-                        <input class="text-field__input" type="email" name="Email" id="Email" placeholder="Email">
-                    </div>
-
-                    <div class="text-field">
-                        <label class="text-field__label" for="login">Textarea</label>
-                        <input class="text-field__input" type="text" name="Textarea" id="Textarea" placeholder="Textarea">
-                    </div>
-
-                </form>
-                <button class="btn" id="btn-form">SEND</button>
-            </div>
-
-        </section>
-
-        <section class="border"></section>
-
-        <section class="footer flex">
-
-            <div>
-                <a class="twitter-timeline" data-lang="en" data-width="295" data-height="299" data-dnt="true" data-theme="light" href="https://twitter.com/saltgroup?ref_src=twsrc%5Etfw">Tweets by saltgroup</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-
-            <div>
-                <h6>Navigation</h6>
-                <ul type="none">
-                    <li><a class="foot_btn" href="">HOME</a></li>
-                    <li><a class="foot_btn" href="">PRODUCTS</a></li>
-                    <li><a class="foot_btn" href="">SERVICES</a></li>
-                    <li><a class="foot_btn" href="">RESOURCES</a></li>
-                    <li><a class="foot_btn" href="">ABOUT</a></li>
-                    <li><a class="foot_btn" href="">CONTACT US</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h6>links</h6>
-                <ul type="none">
-                    <li><a class="foot_btn" href="">Disclaimer</a></li>
-                    <li><a class="foot_btn" href="">Legal</a></li>
-                    <li><a class="foot_btn" href="">Environment Policy</a></li>
-                    <li><a class="foot_btn" href="">Privacy</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h6>contact sales</h6>
-                <ul type="none">
-                    <li class="foot_btn">PHONE:    +61 3 9614 4416</li>
-                    <li class="foot_btn">EMAIL:    sales@saltgroup.com.au</li>
-                </ul>
-            </div>
-
-            <div class="foot_logo flex"><img src="/assets/img/foot_logo.png" alt=""></div>
-
-        </section>
-
-        <section class="end">
-
-            <span>© 2017 SALT GROUP</span>
-            <span>ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.</span>
-
-        </section>
+    </section>
       
-    </div>
+<script src="./assets/js/slider.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./assets/js/scroll.js"></script>
+<script src="./assets/js/burger.js"></script>
+<script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
 </body>
 </html>
